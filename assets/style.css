@@ -1,111 +1,129 @@
-/* Ensure header has a background image */
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Hero Section */
 .hero {
-  position: relative;
-  background-image: url('assets/images/Banner-Background.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 100px 0;  /* Adjust this for vertical spacing */
-  color: white;
+  background: linear-gradient(to right, #0a3d62, #3c6382);
+  color: #fff;
   text-align: center;
+  padding: 140px 20px;
 }
 
-.hero-content {
-  position: relative; /* To layer it over the background */
-  z-index: 2;
-}
-
-.hero img {
-  width: 100%;
-  opacity: 0.6; /* Make the header image semi-transparent */
-  z-index: 1;  /* Ensure it's behind the content */
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.hero h1, .hero h2, .hero p {
-  margin: 0;
-  padding: 0;
-  color: white;
-  z-index: 2;
-}
-
-/* Optional: Styling for header text */
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
 }
-
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-/* --- Section: Hero Title & Subtitle --- */
-.hero-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.hero-subtitle {
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
-/* --- Section: Benefit List Icons + Text --- */
-.benefits-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.benefits-list li {
-  flex: 1 1 45%;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
-}
-
-.benefits-list li img {
-  width: 40px;
-  height: auto;
-  margin-right: 1rem;
-}
-
-.benefits-list li .benefit-text {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-/* --- Section: Image Grid --- */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-/* --- Section: Footer --- */
-.footer {
-  text-align: center;
-  font-size: 0.875rem;
-  color: #777;
-  padding: 2rem 0;
-  margin-top: 4rem;
-}
-
 
 .hero p {
   font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
+.btn-primary {
+  background: #ffb400;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #ffc94d;
+}
+
+/* Features Section */
+.features {
+  padding: 80px 20px;
+  background: #f8f9fb;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.features .grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  background: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background: #0a3d62;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #1e6091;
+}
+
+/* Footer */
+footer {
+  background: #0a3d62;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Fade-In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
