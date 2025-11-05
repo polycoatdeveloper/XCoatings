@@ -40,6 +40,70 @@
   font-size: 2rem;
   margin-bottom: 15px;
 }
+/* --- Section: Hero Title & Subtitle --- */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* --- Section: Benefit List Icons + Text --- */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-list li {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.benefits-list li img {
+  width: 40px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.benefits-list li .benefit-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* --- Section: Image Grid --- */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* --- Section: Footer --- */
+.footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #777;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
 
 .hero p {
   font-size: 1.2rem;
